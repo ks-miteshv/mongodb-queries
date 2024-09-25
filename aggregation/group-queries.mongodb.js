@@ -1,5 +1,5 @@
 // Select the database to use.
-use("tranning");
+use("sample_training");
 
 // find all categoies and its total companies.
 db.companies.aggregate([
