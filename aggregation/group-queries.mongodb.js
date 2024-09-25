@@ -9,4 +9,12 @@ db.companies.aggregate([
       total: { $sum: 1 }, // Step 2: Count the number of documents in this group
     },
   },
+  {
+    $sort: {
+      total: -1,
+    },
+  },
+  {
+    $limit: 5,
+  },
 ]);
