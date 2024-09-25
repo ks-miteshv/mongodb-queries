@@ -6,7 +6,7 @@ db.companies.aggregate([
   {
     $group: {
       _id: "$category_code",
-      total: { $sum: 1 }, // Step 2: Count the number of documents in this group
+      total: { $sum: 1 }, // Step 2: Count the number of documents in this group, and add 1 when find each document.
     },
   },
   {
